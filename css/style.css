@@ -6,7 +6,8 @@
 }
 
 body {
-  height: 100vh;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  min-height: 100vh;
   background-color: #ecf2f8;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,6 +42,8 @@ body .grid-section .daniel-cont {
   background-image: url(../images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
   background-position-x: 80%;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 body .grid-section .daniel-cont .daniel {
@@ -64,21 +67,22 @@ body .grid-section .daniel-cont .daniel .names img {
   margin-right: 20px;
 }
 
-body .grid-section .daniel-cont .daniel .names h3 {
+body .grid-section .daniel-cont .daniel .names div h3 {
   font-size: 13px;
   color: #ecf2f8;
 }
 
-body .grid-section .daniel-cont .daniel .names p {
+body .grid-section .daniel-cont .daniel .names div p {
   font-size: 11px;
   color: #b3b3b3;
 }
 
 body .grid-section .daniel-cont .daniel h4 {
   color: white;
-  font-size: 18px;
+  font-size: 19px;
   margin-bottom: 15px;
   line-height: 1.3;
+  font-weight: 500;
 }
 
 body .grid-section .daniel-cont .daniel p {
@@ -95,6 +99,8 @@ body .grid-section .jonathan-cont {
   -ms-grid-row: 1;
   grid-row: 1;
   background-color: #48556a;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 body .grid-section .jonathan-cont .jonathan {
@@ -149,6 +155,8 @@ body .grid-section .jeanette-cont {
   -ms-grid-row: 2;
   grid-row: 2;
   background-color: white;
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 body .grid-section .jeanette-cont .jeanette {
@@ -181,6 +189,20 @@ body .grid-section .jeanette-cont .jeanette .name p {
   color: #b3b3b3;
 }
 
+body .grid-section .jeanette-cont .jeanette h4 {
+  font-size: 20px;
+  width: 90%;
+  margin-bottom: 15%;
+  color: #62677a;
+  line-height: 1.3;
+}
+
+body .grid-section .jeanette-cont .jeanette p {
+  font-size: 13px;
+  color: #999999;
+  line-height: 1.4;
+}
+
 body .grid-section .patrick-cont {
   border-radius: 8px;
   -ms-grid-column: 2;
@@ -189,7 +211,9 @@ body .grid-section .patrick-cont {
   -ms-grid-row: 2;
   grid-row: 2;
   background-color: #18202D;
-  color: white;
+  color: #ffffff;
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 body .grid-section .patrick-cont .patrick {
@@ -225,15 +249,16 @@ body .grid-section .patrick-cont .patrick .names p {
 
 body .grid-section .patrick-cont .patrick h4 {
   color: white;
-  font-size: 17px;
+  font-size: 19px;
   margin-bottom: 14px;
   line-height: 1.3;
+  margin-bottom: 8%;
 }
 
 body .grid-section .patrick-cont .patrick p {
   color: #b3b3b3;
-  font-size: 14px;
-  line-height: 1.3;
+  font-size: 13px;
+  line-height: 1.4;
 }
 
 body .grid-section .kira-cont {
@@ -245,6 +270,8 @@ body .grid-section .kira-cont {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1/3;
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 body .grid-section .kira-cont .kira {
@@ -277,14 +304,28 @@ body .grid-section .kira-cont .kira .name p {
   color: #b3b3b3;
 }
 
+body .grid-section .kira-cont .kira h4 {
+  font-size: 20px;
+  margin-bottom: 15%;
+  color: #62677a;
+  line-height: 1.3;
+}
+
 body .grid-section .kira-cont .kira p {
-  font-size: 14px;
+  font-size: 13px;
+  color: #999999;
+  line-height: 1.4;
 }
 
 @media screen and (max-width: 800px) {
   body .grid-section {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    margin-top: 8%;
+  }
+  body .grid-section .daniel-cont, body .grid-section .jeanette-cont, body .grid-section .jonathan-cont, body .grid-section .patrick-cont, body .grid-section .kira-cont {
+    grid-row: auto;
+    grid-column: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
